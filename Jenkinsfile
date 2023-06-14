@@ -27,7 +27,7 @@ pipeline {
 
     stage('remove app') {
       steps {
-        archiveArtifacts 'nodejs'
+        archiveArtifacts 'NodeJS-EmptySiteTemplate_master'
       }
     }
 
