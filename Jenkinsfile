@@ -14,7 +14,14 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'node server.js'
+        sh 'node server.js &'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        sh '''curl 192.168.14.33:8080
+'''
       }
     }
 
