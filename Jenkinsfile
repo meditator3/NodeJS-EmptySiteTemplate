@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('remove app') {
+      steps {
+        sleep 2
+      }
+    }
+
   }
 }
