@@ -15,6 +15,7 @@ pipeline {
     stage('Build') {
       steps {
         sleep 2
+        sh 'node server.js'
       }
     }
 
