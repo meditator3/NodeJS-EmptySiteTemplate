@@ -27,9 +27,9 @@ pipeline {
 
     stage('remove app') {
       steps {
-        archiveArtifacts '/root/jenkins/workspace/NodeJS-EmptySiteTemplate_master'
         sh '''tar -czfv nodejs-$BUILD_NUMBER.tar.gz   
   *'''
+        archiveArtifacts 'nodejs$BUILD_NUMBER'
       }
     }
 
