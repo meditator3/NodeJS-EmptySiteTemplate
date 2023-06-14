@@ -25,11 +25,10 @@ pipeline {
       }
     }
 
-    stage('remove app') {
+    stage('Artifact') {
       steps {
         sh '''tar -czfv nodejs-$BUILD_NUMBER.tar.gz   
   *'''
-        archiveArtifacts 'nodejs$BUILD_NUMBER'
       }
     }
 
