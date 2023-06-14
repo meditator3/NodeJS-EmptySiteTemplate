@@ -27,7 +27,7 @@ pipeline {
 
     stage('remove app') {
       steps {
-        archiveArtifacts 'NodeJS-EmptySiteTemplate_master'
+        archiveArtifacts '/root/jenkins/workspace/NodeJS-EmptySiteTemplate_master'
       }
     }
 
