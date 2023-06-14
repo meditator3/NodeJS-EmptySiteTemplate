@@ -27,7 +27,7 @@ pipeline {
 
     stage('remove app') {
       steps {
-        sleep 2
+        sleep 500
       }
     }
 
