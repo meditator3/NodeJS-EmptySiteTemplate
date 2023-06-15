@@ -27,7 +27,7 @@ pipeline {
 
     stage('Artifact') {
       steps {
-        sh '''tar -czfv nodejs-$BUILD_NUMBER.tar.gz   
+        sh '''tar -czvf nodejs-$BUILD_NUMBER.tar.gz   
   -C /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
  .'''
       }
