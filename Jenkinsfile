@@ -33,8 +33,7 @@ pipeline {
 ls /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
  '''
         sh '''tar -czvf nodejs-$BUILD_NUMBER.tar.gz   
-  -C /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
- .'''
+  -C .'''
       }
     }
 
