@@ -30,10 +30,9 @@ pipeline {
         sh '''
 
 
-ls /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
- '''
-        sh '''tar -czvf nodejs-$BUILD_NUMBER.tar.gz   
-  -C *.'''
+tar czvf nodejs-$BUILD_NUMBER.tar.gz   
+ *'''
+        archiveArtifacts '*.tar.gz'
       }
     }
 
