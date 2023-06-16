@@ -30,7 +30,7 @@ pipeline {
         sh '''
 
 
-  tar -czvf nodejs-$BUILD_NUMBER.tar.gz   
+  tar -czvf nodejs.tar.gz   
 ./*'''
         archiveArtifacts '*.tar.gz'
       }
