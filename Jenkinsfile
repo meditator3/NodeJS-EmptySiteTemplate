@@ -32,5 +32,12 @@ pipeline {
       }
     }
 
+    stage('Push to Dockerhub') {
+      steps {
+        sh 'docker login '
+        sh 'docker push arielguez/nodejs-hello:${env.BUILD_NUMBER}'
+      }
+    }
+
   }
 }
