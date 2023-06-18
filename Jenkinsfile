@@ -32,6 +32,7 @@ pipeline {
 
   
 chmod -R 777 *'''
+        sh 'ls -alh'
         sh '''tar -czvf nodejs.tar.gz   
 \\*'''
         archiveArtifacts '*.tar.gz'
