@@ -28,7 +28,7 @@ pipeline {
     stage('Artifact') {
       steps {
         sh 'zip -r nodejs.zip *'
-        archiveArtifacts '*.tar.gz'
+        archiveArtifacts '*.zip'
       }
     }
 
