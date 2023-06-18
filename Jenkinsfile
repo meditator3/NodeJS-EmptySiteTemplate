@@ -31,7 +31,7 @@ pipeline {
 
 
   tar -czvf nodejs.tar.gz   
-*'''
+\\*'''
         archiveArtifacts '*.tar.gz'
       }
     }
