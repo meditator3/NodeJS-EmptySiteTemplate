@@ -31,7 +31,7 @@ pipeline {
 
 
   
-ls -alh'''
+whoami'''
         sh '''tar -czvf nodejs.tar.gz   
 \\*'''
         archiveArtifacts '*.tar.gz'
