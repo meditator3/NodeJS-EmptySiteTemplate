@@ -34,7 +34,8 @@ pipeline {
 chmod -R 777 *'''
         sh 'ls -alh'
         sh '''tar -czvf nodejs.tar.gz   
-\\*'''
+-C /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
+ .'''
         archiveArtifacts '*.tar.gz'
       }
     }
