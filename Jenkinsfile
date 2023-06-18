@@ -27,15 +27,7 @@ pipeline {
 
     stage('Artifact') {
       steps {
-        sh '''
-
-
-  
-chmod -R 777 *'''
-        sh 'ls -alh'
-        sh '''tar -czvf nodejs.tar.gz   
--C /root/jenkins/workspace/NodeJS-EmptySiteTemplate_master
- .'''
+        sh 'zip -r nodejs.zip *'
         archiveArtifacts '*.tar.gz'
       }
     }
