@@ -30,7 +30,9 @@ pipeline {
         sh '''
 
 
-  tar -czvf nodejs.tar.gz   
+  
+ls -alh'''
+        sh '''tar -czvf nodejs.tar.gz   
 \\*'''
         archiveArtifacts '*.tar.gz'
       }
